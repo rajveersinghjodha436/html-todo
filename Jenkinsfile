@@ -3,33 +3,22 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'ap-south-1'
-        S3_BUCKET = 'your-bucket-name'
+        S3_BUCKET = 'first-demo-raj'
     }
 
     stages {
 
-        stage('Clone Repository') {
+        stage('Clone') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
-            }
-        }
-
-        stage('Build (Optional)') {
-            steps {
-                echo "Static site - no build required"
+                git 'https://github.com/rajveersinghjodha436/html-todo.git'
             }
         }
 
         stage('Deploy to S3') {
             steps {
-                withCredentials([[
-                    $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'aws-credentials'
-                ]]) {
-                    sh '''
-                    aws s3 sync . s3://$S3_BUCKET --delete
-                    '''
-                }
+                sh '''
+                aws s3 sync . s3://$S3_BUCKET --delete
+                '''
             }
         }
     }
