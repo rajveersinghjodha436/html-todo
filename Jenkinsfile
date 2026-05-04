@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/rajveersinghjodha436/html-todo.git'
-            }
-        }
-
         stage('Deploy to S3') {
             steps {
                 sh '''
