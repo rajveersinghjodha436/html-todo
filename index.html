@@ -1,97 +1,137 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Iran  Blog</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(-45deg, #1f4037, #99f2c8, #3a6073, #16222a);
-      background-size: 400% 400%;
-      animation: gradientBG 10s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-top: 25px;
-      color: #ffd700;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 16px;
-    }
-
-    .footer {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 14px;
-      opacity: 0.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 15px;
+        }
+        .post {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .post h2 {
+            margin-top: 10px;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Iran Oil Crisis</h1>
+<header>
+    <h1>Daily News Blog</h1>
+    <p>Your Source for Latest Updates</p>
+</header>
 
-    <p>
-      The Iran Oil Crisis refers to a series of geopolitical tensions involving Iran's oil production,
-      global energy markets, and international relations. Oil has long been a central part of Iran’s economy,
-      making any disruption significant worldwide.
-    </p>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Technology</a>
+    <a href="#">Sports</a>
+    <a href="#">Entertainment</a>
+</nav>
 
-    <h2>Background</h2>
-    <p>
-      Iran holds one of the largest oil reserves in the world. Over the years, sanctions, political conflicts,
-      and regional tensions have affected its ability to export oil freely. These issues have created instability
-      in global oil prices.
-    </p>
+<div class="container">
 
-    <h2>Causes of the Crisis</h2>
-    <p>
-      The crisis is driven by factors such as economic sanctions, conflicts in the Middle East, and disputes
-      over nuclear policies. Restrictions on Iran’s oil exports have reduced supply, impacting global markets.
-    </p>
+    <!-- Main Content -->
+    <div class="main">
 
-    <h2>Global Impact</h2>
-    <p>
-      Fluctuations in oil prices affect economies worldwide. Countries dependent on oil imports face increased
-      costs, while oil-exporting nations may experience shifts in revenue. The crisis also influences global
-      political alliances.
-    </p>
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="News Image">
+            <h2>Breaking News: Tech Innovation 2026</h2>
+            <p><small>Posted on May 4, 2026</small></p>
+            <p>New advancements in artificial intelligence are transforming industries worldwide. Experts say this will shape the future of work.</p>
+        </div>
 
-    <h2>Conclusion</h2>
-    <p>
-      The Iran Oil Crisis highlights the importance of energy security and geopolitical stability. Understanding
-      its causes and effects helps in analyzing global economic trends and future energy policies.
-    </p>
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="News Image">
+            <h2>Sports Update: Championship Highlights</h2>
+            <p><small>Posted on May 3, 2026</small></p>
+            <p>The final match was thrilling as the underdogs secured a surprising victory in the last minute of the game.</p>
+        </div>
 
-    <div class="footer">
-      Blog created by Rajveer
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="News Image">
+            <h2>Global News: Economic Trends</h2>
+            <p><small>Posted on May 2, 2026</small></p>
+            <p>Markets are showing mixed signals as global economic conditions continue to evolve with new policies.</p>
+        </div>
+
     </div>
-  </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Latest Posts</h3>
+        <ul>
+            <li><a href="#">AI in Daily Life</a></li>
+            <li><a href="#">Startup Growth Tips</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Travel Guide 2026</a></li>
+        </ul>
+
+        <h3>Categories</h3>
+        <ul>
+            <li>Technology</li>
+            <li>Sports</li>
+            <li>Business</li>
+            <li>Entertainment</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Daily News Blog | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
